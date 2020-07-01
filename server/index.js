@@ -37,6 +37,8 @@ app.post('/api/users/register', (req, res) => { //Register Route 생성
 
   user.save((err, userInfo) => {
     if(err) return res.json({success : false, err})
+    console.log(123);
+    
     return res.status(200).json({ // 저장 성공
       success : true
     })
