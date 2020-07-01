@@ -22,6 +22,10 @@ mongoose.connect('mongodb+srv://gktnwls1127:hasujin1104^^@cluster0-6fuda.mongodb
 
 app.get('/', (req, res) => res.send('Hello World! asdf asdf')); //페이지에 hello world 출력
 
+app.get('/api/hello', (req, res) => {
+  res.send("안녕하세요~")
+})
+
 app.post('/api/users/register', (req, res) => { //Register Route 생성
 
   //회원가입할때 필요한 정보들을 client에서 가져오면
